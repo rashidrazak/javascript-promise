@@ -1,0 +1,30 @@
+{
+  "plugins": ["prettier", "sort", "jsdoc"],
+  "env": {
+    "browser": true,
+    "node": true,
+    "commonjs": true,
+    "es6": true,
+    "jest": true
+  },
+  "settings": {
+    "jsdoc": {
+      "mode": "typescript"
+    }
+  },
+  "extends": ["eslint:recommended", "plugin:prettier/recommended", "plugin:sort/recommended", "plugin:jsdoc/recommended"],
+  "parserOptions": {
+    "ecmaVersion": 9
+  },
+  "rules": {
+    "prettier/prettier": "error",
+    "no-console": "off",
+    "indent": ["error", 2, {"SwitchCase": 1}],
+    "linebreak-style": ["error", "unix"],
+    "quotes": ["error", "single", {"allowTemplateLiterals": true}],
+    "semi": ["error", "never"],
+    "eqeqeq": "warn",
+    "sort/object-properties": "off",
+    "jsdoc/require-returns": "off"
+  }
+}
